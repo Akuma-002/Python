@@ -17,8 +17,8 @@ print(type(dictionary))
 my_set = {1, 2, 3, 4, 5}
 print(type(my_set))
 
-for i in range(1, 10): # it will go from 1 to 9
-    print("Hello")
+for i in my_set: # it will go from 1 to 9
+    print(i)
     
-else: #it will print when the for loop is done
+else: #it will print when the for loop is normaly done
     print(i)
