@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 GPS Address</title>
+  <script>
+    function getLocationAndAddress() {
+      fetch('/location')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('coords').innerText =
+            'Latitude: ' + data.lat + '\\nLongitude: ' + data.lon;
+          if (data.lat !== "N/A" && data.lon !== "N/A") {
+            // Use OpenStreetMap Nominatim API for reverse geocoding
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${data.lat}&lon=${data.lon}`)
+              .then(resp => resp.json())
+              .then(addrData => {
+                document.getElementById('address').innerText =
+                  addrData.display_name || "Address not found";
+              })
+              .catch(() => {
+                document.getElementById('address').innerText = "Error fetching address";
+              });
+          } else {
+            document.getElementById('address').innerText = "No valid coordinates yet.";
+          }
+        })
+        .catch(err => {
+          document.getElementById('coords').innerText = 'Error: ' + err;
+          document.getElementById('address').innerText = '';
+        });
+    }
+  </script>
+</head>
+<body>
+    <div class="mainBox">
+        <h2>ESP32 GPS Location & Address</h2>
+        <button onclick="getLocationAndAddress()">Get Address</button>
+        <pre id="coords"></pre>
+        <pre id="address" style="color:blue"></pre>
+    </div>
+    
+</body>
+<style>
+    body{
+        padding: 100px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainBox{
+        border: 2px solid white;
+        height: 200px;
+        width: 400px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:lightblue;
+    }
+</style>
+</html>
