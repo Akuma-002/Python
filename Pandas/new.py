@@ -4,3 +4,5 @@ ar = pd.Series([1, 2, 3, 4, 5, 6], index=['a', 'b', 'c', 'd', 'e', 'f'])
 df = pd.DataFrame({"name":["sahil", "Ram", "ema"], "marks":[100, 30, 45], "age":[20, 30, 1]})
 dataF = pd.read_excel("data\employee_data.xlsx")
 print(dataF.head())
+print(dataF.describe())
+
