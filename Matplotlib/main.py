@@ -33,4 +33,6 @@ plt.title("Usage")
 
 plt.suptitle("All charts")
 plt.tight_layout()
+plt.savefig("nn.png", dpi=300, bbox_inches="tight")
 plt.show()
+
