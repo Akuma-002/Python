@@ -28,4 +28,5 @@ plt.plot(x, y)
 
 plt.subplot(1, 2, 2)
 plt.plot(y, z)
+plt.tight_layout()
 plt.show()
