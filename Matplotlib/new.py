@@ -1,8 +1,3 @@
-import matplotlib.pyplot as plt
-import pandas as pd
+import numpy as np
+a = np.array([1, 2, 3, 34])
 
-df = pd.read_csv("data/netflix_movies_sample_1000.csv")
-
-print(df.info())
-
-df = df.dropna(subset=['movie_id', 'title', 'release_year'])
