@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
-x = [1, 2, 3, 4, 5, 6]
-y = [1, 2, 3, 4, 5, 6]
-z = [1, 4, 9, 16, 25, 36]
-plt.plot(x, y)
-plt.plot(x, z)
-plt.show()
+import pandas as pd
+
+df = pd.read_csv("data/netflix_movies_sample_1000.csv")
+
+print(df.info())
+
+df = df.dropna(subset=['movie_id', 'title', 'release_year'])
