@@ -1,7 +1,11 @@
-a = 20
-b=15
-print(f"Befor swap a = {a} and b = {b}")
-temp = a
-a = b 
-b = temp
-print(f"After swap a = {a} and b = {b}")
+a = int(input("Enter the first number : "))
+b = int(input("Enter the second number : "))
+
+if(a == b):
+    print("Both are equal")
+elif(a < b):
+    print(f"{a} is smaller then {b}")
+elif(a > b):
+    print(f"{b} is smaller then {a}")
+else:
+    print("Invalid")
