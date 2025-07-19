@@ -1,6 +1,12 @@
 import numpy as np
+import pandas as pd
 
-arr = np.array([1, 2, 3, 5 , 6, 7])
-print(np.shape(arr))
-arr1 = np.insert(arr, 1, 10)
-print(arr1)
+a = {
+    "name" : ["sahil", "Ram"],
+    "marks" : [12, 34]
+}
+
+print(type(a))
+
+ar = pd.DataFrame(a)
+print(ar)
