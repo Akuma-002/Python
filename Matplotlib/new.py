@@ -1,4 +1,6 @@
-a = int(input("Enter the first number : "))
-b = int(input("Enter the second number : "))
+import numpy as np
 
-print(f"{min(a, b)} is smaller")
+arr = np.array([1, 2, 3, 5 , 6, 7])
+print(np.shape(arr))
+arr1 = np.reshape(arr, [2, 3])
+print(arr1)
