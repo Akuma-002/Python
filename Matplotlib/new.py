@@ -9,4 +9,4 @@ a = {
 print(type(a))
 
 ar = pd.DataFrame(a)
-print(ar)
+print(ar.info())
