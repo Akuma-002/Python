@@ -9,4 +9,4 @@ a = {
 print(type(a))
 
 ar = pd.DataFrame(a)
-print(ar.info())
+print(ar.iloc[1])
