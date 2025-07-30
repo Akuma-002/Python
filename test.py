@@ -1,5 +1,5 @@
-a = "Hello"
-
-b = a[0:3]
-
-print("adsa %s" %a)
+num = int(input("Enter a number: "))
+if((num % 2)== 0):
+    print("Even")
+else:
+    print("Odd")
