@@ -1,5 +1,11 @@
 num = int(input("Enter a number: "))
-if((num % 2)== 0):
-    print("Even")
+flag = 0
+for i in range(1, num):
+    if (flag > 1 or num <=0):
+        break
+    if(num % i == 0):
+        flag+=1
+if(flag == 1):
+    print("Prime")
 else:
-    print("Odd")
+    print("Not Prime")
