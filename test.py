@@ -15,3 +15,10 @@ for i in range(n):
         print(count, end=" ")
         count+=1
     print("\n")
+    
+    
+for i in range(n+1):
+    print(" "*(n-i),"*"*((i*2)-1))
+
+str = "Hello'''"
+print(str.rstrip("'"))
