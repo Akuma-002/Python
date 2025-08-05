@@ -24,11 +24,12 @@
 # print(str.rstrip("'"))
 
 a = [1, 2 , 3, 4, 5, 6, 7, "sahil"]
-
+d = ("sahil", 12)
 s = {
     "name": "Sahil",
     "age" : 18
 }
-
+print(d)
 for i in a:
     print(i)
+    
