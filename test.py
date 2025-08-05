@@ -29,7 +29,15 @@ s = {
     "name": "Sahil",
     "age" : 18
 }
+t = 123456789033
+print(t)
 print(d)
+for i in a:
+    print(i)
+    
+
+a.append("Ram")
+
 for i in a:
     print(i)
     
