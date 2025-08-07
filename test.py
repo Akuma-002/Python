@@ -58,12 +58,21 @@
 # print(f"Total vowals are : {count}")
 
 
-st = input("Enter a string: ")
-count = 0
-for i in range(0, int(len(st)/2)):
-    if(st[i] == st[(-(i+1))]):
-        count += 1
-if(count == int(len(st)/2)):
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+# st = input("Enter a string: ")
+# count = 0
+# for i in range(0, int(len(st)/2)):
+#     if(st[i] == st[(-(i+1))]):
+#         count += 1
+# if(count == int(len(st)/2)):
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+st = input("Enter a string : ")
+temp = ""
+for i in range(len(st)):
+    if (st[i] == 'a'or st[i] == 'e'or st[i] == 'i'or st[i] == 'o'or st[i] == 'u'):
+        temp+="*"
+    else:
+        temp+=st[i]
+print(temp)

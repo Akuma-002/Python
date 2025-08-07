@@ -1,5 +1,2 @@
-a = 1
-while True:
-    print(a)
-    a*=1000000000000
-    
+for i in range(5, 1):
+    print(i)
