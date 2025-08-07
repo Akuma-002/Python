@@ -68,11 +68,19 @@
 # else:
 #     print("Not Palindrome")
 
-st = input("Enter a string : ")
-temp = ""
-for i in range(len(st)):
-    if (st[i] == 'a'or st[i] == 'e'or st[i] == 'i'or st[i] == 'o'or st[i] == 'u'):
-        temp+="*"
-    else:
-        temp+=st[i]
-print(temp)
+# st = input("Enter a string : ")
+# temp = ""
+# for i in range(len(st)):
+#     if (st[i] == 'a'or st[i] == 'e'or st[i] == 'i'or st[i] == 'o'or st[i] == 'u'):
+#         temp+="*"
+#     else:
+#         temp+=st[i]
+# print(temp)
+
+
+st = input("Enter a string: ")
+a = []
+for i in st:
+    if ((i not in a) and i !=' '):
+        a.append(i)
+        print(f"{i} in this string is : ",st.count(i))
