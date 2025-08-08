@@ -78,9 +78,28 @@
 # print(temp)
 
 
-st = input("Enter a string: ")
-a = []
-for i in st:
-    if ((i not in a) and i !=' '):
-        a.append(i)
-        print(f"{i} in this string is : ",st.count(i))
+# st = input("Enter a string: ")
+# a = []
+# for i in st:
+#     if ((i not in a) and i !=' '):
+#         a.append(i)
+#         print(f"{i} in this string is : ",st.count(i))
+
+
+
+a=int(input("enter a no."))
+flag = False
+if a <=1:
+    print("the no. is not a prime no.")
+elif a==2:
+    print("the no. is a prime no.")
+else:
+    for i in range(2,a):
+        if (a%i == 0):
+            flag = False
+            print("the no. is not a prime no.")
+            break
+        else:
+            flag=True
+if(flag):
+    print("Prime Number")
