@@ -87,19 +87,29 @@
 
 
 
-a=int(input("enter a no."))
-flag = False
-if a <=1:
-    print("the no. is not a prime no.")
-elif a==2:
-    print("the no. is a prime no.")
-else:
-    for i in range(2,a):
-        if (a%i == 0):
-            flag = False
-            print("the no. is not a prime no.")
-            break
-        else:
-            flag=True
+# a=int(input("enter a no."))
+# flag = False
+# if a <=1:
+#     print("the no. is not a prime no.")
+# elif a==2:
+#     print("the no. is a prime no.")
+# else:
+#     for i in range(2,a):
+#         if (a%i == 0):
+#             flag = False
+#             print("the no. is not a prime no.")
+#             break
+#         else:
+#             flag=True
+# if(flag):
+#     print("Prime Number")
+
+num = int(input("Enter a number: "))
+flag = True
+for i in range(2, num):
+    if(num%i == 0):
+        flag = False
 if(flag):
-    print("Prime Number")
+    print("Prime")
+else:
+    print("Not prime")
