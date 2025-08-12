@@ -8,5 +8,5 @@ df["z_score"] = z_score
 print(df["z_score"].std())
 new_df = df[(df["z_score"] <df["z_score"].std()) & (df["z_score"]>(-(df["z_score"].std())))]
 sns.displot(x = "z_score", data=new_df)
-print()
 plt.show()
+
