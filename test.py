@@ -104,12 +104,17 @@
 # if(flag):
 #     print("Prime Number")
 
-num = int(input("Enter a number: "))
-flag = True
-for i in range(2, num):
-    if(num%i == 0):
-        flag = False
-if(flag):
-    print("Prime")
-else:
-    print("Not prime")
+# num = int(input("Enter a number: "))
+# flag = True
+# for i in range(2, num):
+#     if(num%i == 0):
+#         flag = False
+# if(flag):
+#     print("Prime")
+# else:
+#     print("Not prime")
+
+
+rows = 4 
+for i in range(1, rows+1):
+    print(" "*(rows-i), " *"*i)
