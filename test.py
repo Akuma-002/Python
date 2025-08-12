@@ -115,6 +115,9 @@
 #     print("Not prime")
 
 
-rows = 4 
-for i in range(1, rows+1):
-    print(" "*(rows-i), " *"*i)
+# rows = 4 
+# for i in range(1, rows+1):
+#     print(" "*(rows-i), " *"*i)
+    
+    
+a = {"name" : "sahil"}
