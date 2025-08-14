@@ -147,3 +147,7 @@
 # f = counter.index((max(counter)))
 # print(f"{templi[f]} is - {max(counter)}")
 
+st = input("Enter a string : ")
+for i in range(0, len(st)):
+    print(st)
+    st = st.replace(st[len(st)-1-i], ' ')
