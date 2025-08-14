@@ -120,4 +120,30 @@
 #     print(" "*(rows-i), " *"*i)
     
     
-a = {"name" : "sahil"}
+#a = {"name" : "sahil"}
+
+# st = input("Enter a string : ")
+# temp = ""
+# templi = []
+# for i in range(0, len(st)):
+#     if(st[i] == " "):
+#         if((temp != "") or (st[i] != ',')):
+#             templi.append(temp)
+#         temp=""
+#     elif(i == len(st)-1):
+#         temp += st[i]
+#         templi.append(temp)
+#     else:
+#         temp += st[i]
+    
+# counter = []
+# print(templi)
+# for i in range(0, len(templi)):
+#     counter.append(0)
+#     for j in range(0, len(templi)):
+#         if (templi[i] == templi[j]):
+            
+#             counter[i] += 1
+# f = counter.index((max(counter)))
+# print(f"{templi[f]} is - {max(counter)}")
+
