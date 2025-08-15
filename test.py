@@ -147,7 +147,24 @@
 # f = counter.index((max(counter)))
 # print(f"{templi[f]} is - {max(counter)}")
 
-st = input("Enter a string : ")
-for i in range(0, len(st)):
-    print(st)
-    st = st.replace(st[len(st)-1-i], ' ')
+# st = input("Enter a string : ")
+# for i in range(0, len(st)):
+#     print(st)
+#     st = st.replace(st[len(st)-1-i], ' ')
+
+# gcd 
+
+# n1 = int(input("Enter First number: "))
+# n2 = int (input("Enter Last number: "))
+# out = 1
+# for i in range(2, min(n1, n2)+1):
+#     if((n1 % i == 0) and (n2 % i==0)):
+#         out = i
+# print(out)
+
+lis = [1, 2, 3, 2, 4, 3, 5, 2, 4, 5, 6, 2, 2, 2, 2]
+out = []
+for i in lis:
+    if i not in out:
+        out.append(i)
+print(out)
