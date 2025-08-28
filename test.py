@@ -170,3 +170,11 @@
 # print(out)
 
 
+flowers = ["Blue-Spider Lili", "Sakura", "lavender"]
+flowers.append("Marigold")
+flowers.insert(2, "Rose")
+flowers.pop(2)
+flowers.sort(reverse=True)
+print(f"Count of Rose is {flowers.count("Rose")}")
+flowers[flowers.index("lavender")] = flowers[flowers.index("lavender")].upper()
+print(flowers)
