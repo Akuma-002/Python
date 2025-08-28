@@ -189,19 +189,28 @@
 # lis = nLis
 # print(lis)
 
-lis = [1, 2, 3, 4, 5, 6 , 7]
-print("Max - ", max(lis))
-print("Min - ", min(lis))
-print("Average - ", (sum(lis)/len(lis)))
-print("Sum - ", sum(lis))
-lis.reverse()
+# lis = [1, 2, 3, 4, 5, 6 , 7]
+# print("Max - ", max(lis))
+# print("Min - ", min(lis))
+# print("Average - ", (sum(lis)/len(lis)))
+# print("Sum - ", sum(lis))
+# lis.reverse()
+# print(lis)
+# lis2 = []
+# for i in lis:
+#     lis2.append(i*i)
+# print(lis2)
+# even_sum = 0
+# for i in lis :
+#     if i % 2 ==0 :
+#         even_sum+=i
+# print(even_sum)
+
+# lis = [1, 2, 3, 4, 5, 6, 7]
+# lis.sort(reverse=True)
+# print(lis[1])
+
+lis = []
+for i in range(21):
+    lis.append(i*i)
 print(lis)
-lis2 = []
-for i in lis:
-    lis2.append(i*i)
-print(lis2)
-even_sum = 0
-for i in lis :
-    if i % 2 ==0 :
-        even_sum+=i
-print(even_sum)
