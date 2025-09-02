@@ -215,23 +215,25 @@
 #     lis.append(i*i)
 # print(lis)
 
-lis = ["pasta", "pizza", "ice-cream", "pasta", "ice-cream"]
-price = {
-    "pasta" : 150,
-    "pizza" : 250,
-    "ice-cream" : 300
-}
-print(f"Count of pasta - {lis.count("pasta")}")
-lis2 = []
-for i in lis:
-    if i not in lis2:
-        lis2.append(i)
-lis = lis2
-lis.sort()
-temp = 0
-item = ""
-for i in lis:
-    if temp < price[i]:
-        temp = price[i]
-        item = i
-print(f"{item} price is {temp}")
+# lis = ["pasta", "pizza", "ice-cream", "pasta", "ice-cream"]
+# price = {
+#     "pasta" : 150,
+#     "pizza" : 250,
+#     "ice-cream" : 300
+# }
+# print(f"Count of pasta - {lis.count("pasta")}")
+# lis2 = []
+# for i in lis:
+#     if i not in lis2:
+#         lis2.append(i)
+# lis = lis2
+# lis.sort()
+# temp = 0
+# item = ""
+# for i in lis:
+#     if temp < price[i]:
+#         temp = price[i]
+#         item = i
+# print(f"{item} price is {temp}")
+
+st = "Sahil"

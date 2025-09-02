@@ -1,7 +1,11 @@
-def com(lis1, lis2):
-    for i in lis1:
-        if i in lis2:
-            return True
-    return False
+def check(st):
+    count_u = 0
+    count_l = 0
+    for i in st:
+        if(i.isupper()):
+            count_u+=1
+        else:
+            count_l+=1
+    return count_u,count_l
 
-print(com([1, 2, 3], [2, 5, 6]))
+print(check("SahIl"))
