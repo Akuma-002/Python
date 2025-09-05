@@ -236,4 +236,29 @@
 #         item = i
 # print(f"{item} price is {temp}")
 
-st = "Sahil"
+# st = "Sahil"
+
+def remove_duplicate(lst):
+    temp = []
+    for i in lst:
+        if (i not in temp):
+            temp.append(i)
+    return temp
+
+# print(remove_duplicate([1, 2, 3, 4 , 4]))
+
+
+def st_duplicate(lst):
+    temp = lst
+    first = ""
+    last = ""
+    out = ""
+    out = temp.split(" ")[0] 
+    for i in range(temp.count(" ")):
+        first = temp.split(" ")[i]
+        last = temp.split(" ")[i+1]
+        if first != last:
+            out = out + " " + last 
+    print(out)
+
+st_duplicate("Can you you play with me, you you are fool")
