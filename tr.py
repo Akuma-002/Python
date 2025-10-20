@@ -1,3 +1,3 @@
-st = "Sahil go to"
-print(st.split(" ")[1])
-print(st)
+lis = [1, 23, 4, 5]
+
+print(lis.)
