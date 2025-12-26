@@ -1,12 +1,12 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+dataset = pd.read_csv("data\insurance_data_2000.csv")
+print(dataset["charges"])
 
-df = pd.read_csv("./data/employees.csv")
-x = df[["designation", "address"]]
-y = df["salary"]
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
-print("X_train shape:", x_train.shape)
-print("X_test shape:", x_test.shape)
-print("y_train shape:", y_train.shape)
-print("y_test shape:", y_test.shape)
-print(df.shape)
+input_data = dataset.iloc[:,:-1]
+
+output_data = dataset["charges"]
+
+x_train, x_test, y_train, y_test = train_test_split(input_data, output_data, test_size=0.25)
+
+print(x_test)
